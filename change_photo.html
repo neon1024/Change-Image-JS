@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <style>
+
+        html {
+            margin: 0;
+            padding: 0;
+            border: 0;
+
+            box-sizing: border-box;
+        }
+
+        .center-image {
+            display: block;
+            z-index: -1;
+
+            width: 100%;
+        }
+
+        img {
+
+            display: block;
+
+            width: 50%;
+
+            padding: 10vw 10vw 10vw 10vw;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .absolute-button {
+            position: absolute;
+
+            z-index: 1;
+
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%);
+        }
+
+        .hidden-absolute-button {
+
+            display: none;
+
+            position: absolute;
+
+            z-index: 1;
+
+            top: 55%;
+            left: 50%;
+
+            transform: translate(-50%);
+        }
+
+    </style>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <div class="center-image">
+
+        <img id="photo" src="labrador-retriever-scaled.jpg">
+        
+    <div>
+
+    <button class="absolute-button" type="button" onclick="changeImage()">Evolve</button>
+
+    <button id="hiddenButton" class="hidden-absolute-button" type="button" onclick="changeImageBack()">Go Back</button>
+
+    <script src="change_photo.js"></script>
+
+</body>
+
+</html>
